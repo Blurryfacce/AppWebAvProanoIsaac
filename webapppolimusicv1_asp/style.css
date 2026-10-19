@@ -1,0 +1,173 @@
+/* ============================================================
+   style.css
+   Hoja de estilos basica para PoliMusic
+   ============================================================ */
+
+/* --- Reset basico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* --- Contenedor del login --- */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #6c5ce7;
+    margin-bottom: 5px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* --- Formulario --- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a4bd1;
+}
+
+/* --- Mensaje de error --- */
+.error-message {
+    background-color: #ffe0e0;
+    color: #d63031;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* --- Contenedor de canciones --- */
+.songs-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Encabezado --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    color: #6c5ce7;
+    font-size: 24px;
+}
+
+.logout-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e17055;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.logout-link:hover {
+    background-color: #d63031;
+}
+
+/* --- Subtitulo --- */
+.songs-container h2 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* --- Tabla de canciones --- */
+.songs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.songs-table thead th {
+    background-color: #6c5ce7;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.songs-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.songs-table tbody tr:nth-child(even) {
+    background-color: #f9f9fc;
+}
+
+.songs-table tbody tr:hover {
+    background-color: #f0eef7;
+}
+
+/* --- Reproductor de audio --- */
+audio {
+    height: 32px;
+}
